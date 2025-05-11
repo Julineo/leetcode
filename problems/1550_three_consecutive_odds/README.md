@@ -39,4 +39,22 @@ The solution uses a simple counter approach:
 Time Complexity: O(n)
 Space Complexity: O(1)
 
-The solution uses a bitwise operation (`num&1 == 1`) to check if a number is odd, which is more efficient than using modulo (`num%2 != 0`). 
+The solution uses a bitwise operation (`num&1 == 1`) to check if a number is odd, which is more efficient than using modulo (`num%2 != 0`).
+
+## Follow-up Questions
+
+1. **Variable Length**: How would you modify the solution if instead of three consecutive odds, we needed to find k consecutive odds? Would the time/space complexity change?
+
+2. **Streaming Data**: How would you solve this problem if the array was being streamed (one number at a time) and you couldn't store the entire array in memory?
+
+3. **Parallel Processing**: How would you modify the solution to take advantage of parallel processing for very large arrays?
+
+4. **Memory Optimization**: Can you solve this problem using less than O(1) extra space? (Hint: Consider using the array itself to store state)
+
+5. **Early Exit Optimization**: In the current solution, we continue processing even after finding three consecutive odds. How would you modify the code to exit as early as possible?
+
+6. **Error Handling**: How would you handle invalid input cases (like negative numbers) if the constraints were different?
+
+7. **Alternative Approaches**: Can you think of any other approaches to solve this problem? What would be their trade-offs?
+
+8. **Real-world Application**: In what real-world scenarios might you need to find consecutive odd numbers? How would the requirements differ? 
